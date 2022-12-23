@@ -23,6 +23,7 @@ main {
     width: 50%;
     height: 50%;
     
+    
 }
 
 
@@ -49,4 +50,41 @@ main {
 }
 
 
- 
+ .previous {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: grey;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 40px;
+    font-weight: bolder;
+    font-size: 2rem;
+    cursor: pointer;
+ }
+
+ .next {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: grey;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 40px;
+    font-weight: bolder;
+    font-size: 2rem;
+    cursor: pointer;
+   
+    
+ }
+
+
+ .hidden {
+    display: none;
+ }

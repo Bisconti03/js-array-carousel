@@ -26,7 +26,7 @@ for (let index = 0; index < images.length; index++) {
 
 
 const allSlides = document.querySelectorAll('.slide');
-console.log('allSlides', allSlides);
+
 
 
 allSlides[0].classList.add('current');
@@ -34,5 +34,48 @@ allSlides[0].classList.add('current');
 let currentSlide = 0;
 
 
+const nextArrow = document.querySelector('.next');
+nextArrow.addEventListener ('click',
 
+    function ()  {
+
+        allSlides[currentSlide].classList.remove('current');
+        currentSlide = currentSlide + 1;
+
+        allSlides[currentSlide].classList.add('current');
+
+
+        if (currentSlide == allSlides.length - 1) {
+            nextArrow.classList.add('hidden');
+
+        }
+
+
+        previousArrow.classList.remove('hidden');
+    }
+
+);
+
+
+const previousArrow = document.querySelector('.previous');
+previousArrow.addEventListener('click',
+
+function ()  {
+
+    allSlides[currentSlide].classList.remove('current');
+    currentSlide = currentSlide - 1;
+
+    allSlides[currentSlide].classList.add('current');
+
+
+    if (currentSlide == 0) {
+        previousArrow.classList.add('hidden');
+
+    }
+
+
+   nextArrow.classList.remove('hidden');
+}
+
+);
 
