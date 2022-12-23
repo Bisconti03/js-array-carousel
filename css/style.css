@@ -31,13 +31,22 @@ main {
 .slide {
     height: 100%;
     width: 100%;
+    display: none;
 }
 
 
-.slide img {
+ img {
 
     height: 100%;
     width: 100%;
     object-fit: cover;
 
 }
+
+
+.current {
+    display: block;
+}
+
+
+ 
